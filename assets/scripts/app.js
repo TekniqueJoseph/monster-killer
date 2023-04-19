@@ -20,7 +20,7 @@ function attackMonster(mode) {
     const playerDamage = dealPlayerDamage(MONSTER_ATTACK_VALUE)
     currentPlayerHeakth -= playerDamage;
     if (currentMonsterHealth <= 0 && currentPlayerHeakth > 0) {
-      alert('You got the bastard!!!')
+      alert('You got the bastard!!')
     } else if (currentPlayerHeakth <= 0  && currentMonsterHealth > 0) {
       alert('L for you this time.')
     } else if (currentPlayerHeakth <= 0 && currentMonsterHealth <=0){
