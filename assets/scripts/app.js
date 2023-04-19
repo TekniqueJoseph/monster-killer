@@ -5,10 +5,16 @@ const HEAL_VALUE = 30;
 
 let chosenMaxLife = 100;
 let currentMonsterHealth = chosenMaxLife;
-let currentPlayerHealth= chosenMaxLife;
+let currentPlayerHealth = chosenMaxLife;
 let hasBonusLife = true;
 
 adjustHealthBars(chosenMaxLife)
+
+function reset() {
+    currentMonsterHealth = chosenMaxLife;
+    currentPlayerHealth = chosenMaxLife;
+    resetGame(chosenMaxLife)
+}
 
 function endRound() {
     const initialPlayerHealth = currentPlayerHealth;
@@ -29,6 +35,10 @@ function endRound() {
       alert('L for you this time.')
     } else if (currentPlayerHealth <= 0 && currentMonsterHealth <=0){
       alert('You both have failed your respected purposes')
+    }
+
+    if (currentMonsterHealth <= 0 || currentPlayerHealth <=0) {
+            reset()
     }
 }
 
