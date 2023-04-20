@@ -39,7 +39,7 @@ function endRound() {
     }
 
     if (currentMonsterHealth <= 0 && currentPlayerHealth > 0) {
-      alert('You got the bastid!!')
+      alert('You got the Bastid!!')
     } else if (currentPlayerHealth <= 0  && currentMonsterHealth > 0) {
       alert('The Bastid dealt you an L.')
     } else if (currentPlayerHealth <= 0 && currentMonsterHealth <=0){
