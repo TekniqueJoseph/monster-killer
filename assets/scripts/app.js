@@ -34,7 +34,7 @@ function endRound() {
         hasBonusLife = false;
         removeBonusLife()
         currentPlayerHealth = initialPlayerHealth;
-        alert('The Bonus Gave You Life. USE IT!!')
+        alert('The Bonus Gave You Some Life. USE IT!!')
         setPlayerHealth(initialPlayerHealth);
     }
 
