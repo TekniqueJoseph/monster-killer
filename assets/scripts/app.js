@@ -41,7 +41,7 @@ function endRound() {
     if (currentMonsterHealth <= 0 && currentPlayerHealth > 0) {
       alert('You got the bastid!!')
     } else if (currentPlayerHealth <= 0  && currentMonsterHealth > 0) {
-      alert('L for you this time.')
+      alert('Take the L.')
     } else if (currentPlayerHealth <= 0 && currentMonsterHealth <=0){
       alert('You both have failed your respected purposes')
     }
