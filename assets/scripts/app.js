@@ -5,7 +5,7 @@ const HEAL_VALUE = 30;
 const  MODE_ATTACK = 'ATTACK';
 const MODE_STRONG_ATTACK = 'STRONG_ATTACK';
 
-const enteredValue = prompt('Set the Maximum Life for You & The Basted.', '100')
+const enteredValue = prompt('Set the Maximum Life for You & The Bastid.', '100')
 
 let chosenMaxLife = parseInt(enteredValue);
 
