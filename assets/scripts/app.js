@@ -43,7 +43,7 @@ function endRound() {
     } else if (currentPlayerHealth <= 0  && currentMonsterHealth > 0) {
       alert('Take the L.')
     } else if (currentPlayerHealth <= 0 && currentMonsterHealth <=0){
-      alert('You both have failed your respected purposes')
+      alert('Both you and the Bastid failed your respected purposes')
     }
 
     if (currentMonsterHealth <= 0 || currentPlayerHealth <=0) {
