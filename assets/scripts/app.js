@@ -2,7 +2,7 @@ const ATTACK_VALUE = 10;
 const STRONG_ATTACK_VALUE = 17;
 const MONSTER_ATTACK_VALUE = 14;
 const HEAL_VALUE = 30;
-const  MODE_ATTACK = 'ATTACK';
+const MODE_ATTACK = 'ATTACK';
 const MODE_STRONG_ATTACK = 'STRONG_ATTACK';
 
 const enteredValue = prompt('Set the Maximum Life for You & The Bastid.', '100')
