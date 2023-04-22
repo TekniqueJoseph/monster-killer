@@ -226,6 +226,9 @@ function printLogHandler() {
     // for (let i = 0; i < battleLog.length; i ++) {
     //     console.log(battleLog[i])
     // }
+        for (const log of battleLog) {
+            console.log(log)
+        }
         for (const logEntry in battleLog){
             console.log(battleLog[logEntry])
         }
