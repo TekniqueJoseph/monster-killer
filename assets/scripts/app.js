@@ -217,6 +217,12 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
+    for (let i=0; i < 3; i++) {
+        console.log('------------')
+    }
+    for(let i = 10; i > 0; i--){
+        console.log(i)
+    }
     console.log(battleLog)
 }
 
@@ -224,3 +230,15 @@ attackBtn.addEventListener('click', attackHandler)
 strongAttackBtn.addEventListener('click', strongAttackHandler)
 healBtn.addEventListener('click', healPlayerHandler)
 logBtn.addEventListener('click', printLogHandler)
+
+function callMe() {
+    console.log('Called!');
+}
+
+function solve() {
+    for(let i = 0; i < 100; i++){
+        callMe()
+    }
+}
+
+solve()
