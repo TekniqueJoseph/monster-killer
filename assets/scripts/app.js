@@ -231,14 +231,3 @@ strongAttackBtn.addEventListener('click', strongAttackHandler)
 healBtn.addEventListener('click', healPlayerHandler)
 logBtn.addEventListener('click', printLogHandler)
 
-function callMe() {
-    console.log('Called!');
-}
-
-function solve() {
-    for(let i = 0; i < 100; i++){
-        callMe()
-    }
-}
-
-solve()
