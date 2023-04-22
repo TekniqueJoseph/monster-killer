@@ -269,3 +269,17 @@ logBtn.addEventListener('click', printLogHandler)
 //     }   console.log(ran);
 // }
 
+let ran = []
+let ran2 = []
+let finished = false;
+while (!finished) {
+    const rndNum = Math.random();
+    const rndNum2 = Math.random()
+    ran.push(rndNum);
+    ran2.push(rndNum2)
+
+    if ((rndNum && rndNum2 > 0.7) || (rndNum || rndNum2 <= .02)) {
+        finished = true
+    }   console.log(ran.concat(ran2));
+}
+
