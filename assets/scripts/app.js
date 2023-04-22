@@ -217,21 +217,40 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
-    for (let i=0; i < 3; i++) {
+    for (let i=0; i <= 3; i++) {
         console.log('------------')
     }
+    let j = 0;
+    // while(j < 3) {
+    //     console.log(j);
+    //     j++
+    // }
+    do {
+        console.log(j)
+        j++;
+    }while (j < 3)
     // for(let i = 10; i > 0; i--){
     //     console.log(i)
     // }
     // for (let i = 0; i < battleLog.length; i ++) {
     //     console.log(battleLog[i])
     // }
-        for (const logEntry of battleLog) {
-            console.log(logEntry)
-        }
-        for (const logEntry in battleLog){
-            console.log(battleLog[logEntry])
-        }
+    // let i = 0;
+    //     for (const logEntry of battleLog) {
+    //         console.log(logEntry)
+    //         console.log(i);
+    //         i++;
+    //     }
+    let i = 1;
+    for (const logEntry of battleLog) {
+            console.log(`#${i}`);
+            for (const key in logEntry) {
+                console.log(`${key} => ${logEntry[key]}`)
+            } i++;
+    }
+        // for (const logEntry in battleLog){
+        //     console.log(battleLog[logEntry])
+        // }
     // console.log(battleLog)
 }
 
@@ -239,4 +258,14 @@ attackBtn.addEventListener('click', attackHandler)
 strongAttackBtn.addEventListener('click', strongAttackHandler)
 healBtn.addEventListener('click', healPlayerHandler)
 logBtn.addEventListener('click', printLogHandler)
+
+// let ran = []
+// let finished = false;
+// while (!finished) {
+//     const rndNum = Math.random();
+//     ran.push(rndNum);
+//     if (rndNum > 0.5) {
+//         finished = true
+//     }   console.log(ran);
+// }
 
