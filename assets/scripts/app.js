@@ -221,18 +221,28 @@ function printLogHandler() {
     for (let i=0; i < 3; i++) {
         console.log('------------')
     }
+
     let j = 0;
-    // while(j < 3) {
-    //     console.log(j);
-    //     j++
-    // }
-    do {
-        console.log(`This is j ${j}`)
-        for (let k = 0; k < 5; k++) {
-            console.log(`This is k ${k}`)
+    // do {
+    //     console.log(`Outer loop is j ${j}`)
+    //     for (let k = 0; k < 5; k++) {
+    //         console.log(`Inner is k ${k}`)
+    //     }
+    //     j++;
+    // }while (j < 3)
+    outerWhile: do {
+        console.log(`Outer loop is j ${j}`)
+        innerFor: for (let k = 0; k < 5; k++) {
+            if (k === 3) {
+                // break outerWhile;
+                // continue outerWhile; //dangerous use her. creates infinite loop
+            }
+            console.log(`Inner is k ${k}`)
         }
         j++;
     }while (j < 3)
+    
+
     // for(let i = 10; i > 0; i--){
     //     console.log(i)
     // }
