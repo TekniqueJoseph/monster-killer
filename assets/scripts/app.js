@@ -37,9 +37,9 @@
 // let a = 2 //prompt('Enter a number')
 function breakMe(a) {
     if(a > 5) {
-        throw {message: `${a} is greater than 5`}
+        throw {message: `${a} is greater than 5.`}
     } else {
-        console.log(`${a} is acceptable. Error handled`)
+        console.log(`${a} is acceptable. Error handled.`)
     }
     return a
 }
