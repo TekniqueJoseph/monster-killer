@@ -44,14 +44,14 @@ function breakMe(a) {
     return a
 }
 try {
-    breakMe(6)
+    breakMe(100)
 }catch (error) {
     main(error)
     function main(error) {
         console.log(error);
-        // let a;
-        breakMe(5);
-        return {message: 'Number is not 1'}
+        let a;
+        breakMe(1);
+        return {message: `${a} is greater than 5`}
     }
 }
 
