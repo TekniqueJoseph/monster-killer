@@ -218,9 +218,13 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
+    let sum = 0;
     for (let i=0; i < 3; i++) {
+        sum = sum + i
         console.log('------------')
+        break
     }
+    console.log(sum)
 
     let j = 0;
     // do {
@@ -234,6 +238,7 @@ function printLogHandler() {
         console.log(`Outer loop is j ${j}`)
         innerFor: for (let k = 0; k < 5; k++) {
             if (k === 3) {
+                continue
                 // break outerWhile;
                 // continue outerWhile; //dangerous use here. creates infinite loop
             }
@@ -297,12 +302,12 @@ logBtn.addEventListener('click', printLogHandler)
 //         finished = true
 //     }   console.log(ran.concat(ran2));
 // }
-
-// for (let i = 0; i < 5; i++){
-//     if(i === 3) {
-//         // break;
-//         continue;
-//     }
-//     console.log(i);
-// }
+let sum1 = 0;
+for (let l = 0; l < 5; l++){
+    for (let m = 0; m < 2; m++){
+        sum1 = sum1 + l + m
+        continue
+    }
+}
+console.log(`Sum1 => ${sum1}`)
 
