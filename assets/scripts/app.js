@@ -227,7 +227,10 @@ function printLogHandler() {
     //     j++
     // }
     do {
-        console.log(j)
+        console.log(`This is j ${j}`)
+        for (let k = 0; k < 5; k++) {
+            console.log(`This is k ${k}`)
+        }
         j++;
     }while (j < 3)
     // for(let i = 10; i > 0; i--){
@@ -285,11 +288,11 @@ logBtn.addEventListener('click', printLogHandler)
 //     }   console.log(ran.concat(ran2));
 // }
 
-for (let i = 0; i < 5; i++){
-    if(i === 3) {
-        // break;
-        continue;
-    }
-    console.log(i);
-}
+// for (let i = 0; i < 5; i++){
+//     if(i === 3) {
+//         // break;
+//         continue;
+//     }
+//     console.log(i);
+// }
 
