@@ -50,7 +50,7 @@ try {
         console.log(error);
         let a;
         breakMe(2);
-        return {message: `${a} is acceptable. Error handled`}
+        return {message: `${a} is acceptable. Error handled.`}
     }
 }
 
