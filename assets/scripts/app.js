@@ -15,6 +15,7 @@ const enteredValue = prompt('Set the Maximum Life for You & The Bastid.', '100')
 
 let chosenMaxLife = parseInt(enteredValue);
 let battleLog = [];
+let lastLoggedEntry;
 
 if(isNaN(chosenMaxLife) || chosenMaxLife <=0) {
     chosenMaxLife = 100;
@@ -217,7 +218,7 @@ function healPlayerHandler() {
 }
 
 function printLogHandler() {
-    for (let i=0; i <= 3; i++) {
+    for (let i=0; i < 3; i++) {
         console.log('------------')
     }
     let j = 0;
@@ -241,12 +242,17 @@ function printLogHandler() {
     //         console.log(i);
     //         i++;
     //     }
-    let i = 1;
+    let i = 0;
     for (const logEntry of battleLog) {
+        if(!lastLoggedEntry && lastLoggedEntry !== 0 || lastLoggedEntry < i) {
             console.log(`#${i}`);
             for (const key in logEntry) {
                 console.log(`${key} => ${logEntry[key]}`)
-            } i++;
+            }
+            lastLoggedEntry = i;
+            break;
+        }
+            i++; 
     }
         // for (const logEntry in battleLog){
         //     console.log(battleLog[logEntry])
