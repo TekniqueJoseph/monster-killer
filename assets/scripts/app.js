@@ -34,7 +34,6 @@
 //     // throw error;
 // } 
 
-// let a = 2 //prompt('Enter a number')
 function breakMe(a) {
     if(a > 5) {
         throw {message: `${a} is greater than 5.`}
