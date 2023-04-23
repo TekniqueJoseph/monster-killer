@@ -285,3 +285,7 @@ logBtn.addEventListener('click', printLogHandler)
 //     }   console.log(ran.concat(ran2));
 // }
 
+for (let i = 0; i < 5; i++){
+    console.log(i)
+}
+
