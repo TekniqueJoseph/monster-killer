@@ -306,7 +306,7 @@ let sum1 = 0;
 for (let l = 0; l < 5; l++){
     for (let m = 0; m < 2; m++){
         sum1 = sum1 + l + m
-        continue
+        continue // no effect if a condition isnt given to continue to work on
     }
 }
 console.log(`Sum1 => ${sum1}`)
