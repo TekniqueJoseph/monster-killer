@@ -254,10 +254,6 @@ function printLogHandler() {
         }
             i++; 
     }
-        // for (const logEntry in battleLog){
-        //     console.log(battleLog[logEntry])
-        // }
-    // console.log(battleLog)
 }
 
 attackBtn.addEventListener('click', attackHandler)
