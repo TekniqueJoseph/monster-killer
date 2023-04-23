@@ -39,7 +39,7 @@ function breakMe(a) {
     if(a > 5) {
         throw {message: `${a} is greater than 5`}
     } else {
-        console.log(`${a} is ligit. Problem solved`)
+        console.log(`${a} is acceptable. Error handled`)
     }
     return a
 }
@@ -50,7 +50,7 @@ try {
     function main(error) {
         console.log(error);
         let a;
-        breakMe(1);
+        breakMe(2);
         return {message: `${a} is greater than 5`}
     }
 }
